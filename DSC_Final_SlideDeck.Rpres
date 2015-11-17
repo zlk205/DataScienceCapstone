@@ -1,0 +1,37 @@
+THE ROLE THAT HOURS OF OPERATION PLAYS FOR RESTAURANTS AND THEIR AVERAGE STAR RATING ON YELP
+========================================================
+author: Zane Kratzer
+date: November 17, 2015
+
+Key Research Questions
+========================================================
+
+- Are restaurants and other food services establishments that are open during the highest frequency checkin times receiving better reviews, on average? 
+- Does the text of the reviews or tips mention the convenience or consistency of the hours of operation?
+- Are there patterns in the text of the reviews or tips, pertaining to this hours of operation issue, that can be used to predict whether a business is likely to receive a below or above average star rating?
+
+High Frequency Checkin Times
+========================================================
+
+What are the high frequency checkin time slots for restaurant users?
+- Monday: 6-7, 7-8
+- Tuesday: 6-7, 7-8
+- Wednesday: 6-7, 7-8
+- Thursday: 12-1, 5-6, 6-7, 7-8, 8-9
+- Friday: 11-12, 12-1, 1-2, 2-3, 4-5, 5-6, 6-7, 7-9, 8-9
+- Saturday: 11-12, 12-1, 1-2, 6-7
+
+For each restaurant, the sum of high frequency time slots that they are open for business is referred to as their "checkin sum"
+
+Relationship Between Checkin Sums and Average Star Rating
+========================================================
+
+- The checkin sum for each restaurant ranges from 0 to 24, with an average of 8.1 time slots
+- Checkin sum was included in a linear regression model with the average star rating as the outcome variable
+- The regression model indicates that there is a positive relationship between checkin sum and average star rating: Coefficient: 0.016, Std Error: 0.0019, t-value: 8.4, p-value < 0.001
+
+Text Patterns for Restaurants with Below Average Star Ratings and Below Average Checkin Sums
+========================================================
+
+- After concluding that there is a posive relationship between checkin sum and average star rating, the text of all reviews and tips for the corresponding restaurants were analyzed (using R Weka's "N-Gram Tokenizer") to determine if there were word/phrase patterns associated with the hours of operation issue that could be used for a prediction algorithm.
+- Unfortunately, none of the high frequency words/phrases for the 5 different n-grams models (unigram, bigram, trigram, 4-gram, and 5-gram) were associated with hours of operation (i.e. "hours", "closed", "inconsistent", "inconvenient", etc.)
