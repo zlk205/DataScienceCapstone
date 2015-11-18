@@ -14,12 +14,12 @@ High Frequency Checkin Times
 ========================================================
 
 What are the high frequency checkin time slots for restaurant users?
-- Monday: 6-7, 7-8
-- Tuesday: 6-7, 7-8
-- Wednesday: 6-7, 7-8
-- Thursday: 12-1, 5-6, 6-7, 7-8, 8-9
-- Friday: 11-12, 12-1, 1-2, 2-3, 4-5, 5-6, 6-7, 7-9, 8-9
-- Saturday: 11-12, 12-1, 1-2, 6-7
+- Monday: 6-8 PM
+- Tuesday: 6-8 PM
+- Wednesday: 6-8 PM
+- Thursday: 12-1 PM, 5-9 PM
+- Friday: 11 AM-3 PM, 4-9 PM
+- Saturday: 11 AM-2 PM, 6-7 PM
 
 For each restaurant, the sum of high frequency time slots that they are open for business is referred to as their "checkin sum"
 
